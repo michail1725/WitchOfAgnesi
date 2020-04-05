@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.WitchOfAgnesiChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.GetChart = new System.Windows.Forms.Button();
             this.ClearAll = new System.Windows.Forms.Button();
@@ -46,6 +46,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SaveData = new System.Windows.Forms.Button();
+            this.SaveResults = new System.Windows.Forms.Button();
+            this.LoadData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.WitchOfAgnesiChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ValuesTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,27 +57,26 @@
             // WitchOfAgnesiChart
             // 
             this.WitchOfAgnesiChart.BorderlineColor = System.Drawing.Color.Gray;
-            chartArea1.Name = "ChartArea1";
-            this.WitchOfAgnesiChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.WitchOfAgnesiChart.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.WitchOfAgnesiChart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.WitchOfAgnesiChart.Legends.Add(legend4);
             this.WitchOfAgnesiChart.Location = new System.Drawing.Point(23, 37);
             this.WitchOfAgnesiChart.Name = "WitchOfAgnesiChart";
             this.WitchOfAgnesiChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Верзьера Аньези";
-            this.WitchOfAgnesiChart.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Верзьера Аньези";
+            this.WitchOfAgnesiChart.Series.Add(series4);
             this.WitchOfAgnesiChart.Size = new System.Drawing.Size(528, 406);
             this.WitchOfAgnesiChart.TabIndex = 0;
             this.WitchOfAgnesiChart.Text = "chart";
             // 
             // GetChart
             // 
-            this.GetChart.Enabled = false;
-            this.GetChart.Location = new System.Drawing.Point(632, 344);
+            this.GetChart.Location = new System.Drawing.Point(631, 351);
             this.GetChart.Name = "GetChart";
-            this.GetChart.Size = new System.Drawing.Size(113, 34);
+            this.GetChart.Size = new System.Drawing.Size(113, 24);
             this.GetChart.TabIndex = 1;
             this.GetChart.Text = "Построить график";
             this.GetChart.UseVisualStyleBackColor = true;
@@ -82,10 +84,9 @@
             // 
             // ClearAll
             // 
-            this.ClearAll.Enabled = false;
-            this.ClearAll.Location = new System.Drawing.Point(632, 384);
+            this.ClearAll.Location = new System.Drawing.Point(631, 377);
             this.ClearAll.Name = "ClearAll";
-            this.ClearAll.Size = new System.Drawing.Size(113, 34);
+            this.ClearAll.Size = new System.Drawing.Size(113, 24);
             this.ClearAll.TabIndex = 2;
             this.ClearAll.Text = "Очистить поля";
             this.ClearAll.UseVisualStyleBackColor = true;
@@ -94,7 +95,7 @@
             // LeftBoardLabel
             // 
             this.LeftBoardLabel.AutoSize = true;
-            this.LeftBoardLabel.Location = new System.Drawing.Point(643, 7);
+            this.LeftBoardLabel.Location = new System.Drawing.Point(642, 25);
             this.LeftBoardLabel.Name = "LeftBoardLabel";
             this.LeftBoardLabel.Size = new System.Drawing.Size(86, 13);
             this.LeftBoardLabel.TabIndex = 3;
@@ -103,7 +104,7 @@
             // RightBoardLabel
             // 
             this.RightBoardLabel.AutoSize = true;
-            this.RightBoardLabel.Location = new System.Drawing.Point(643, 45);
+            this.RightBoardLabel.Location = new System.Drawing.Point(642, 63);
             this.RightBoardLabel.Name = "RightBoardLabel";
             this.RightBoardLabel.Size = new System.Drawing.Size(92, 13);
             this.RightBoardLabel.TabIndex = 4;
@@ -112,7 +113,7 @@
             // Step
             // 
             this.Step.AutoSize = true;
-            this.Step.Location = new System.Drawing.Point(643, 84);
+            this.Step.Location = new System.Drawing.Point(642, 102);
             this.Step.Name = "Step";
             this.Step.Size = new System.Drawing.Size(30, 13);
             this.Step.TabIndex = 5;
@@ -121,7 +122,7 @@
             // Param
             // 
             this.Param.AutoSize = true;
-            this.Param.Location = new System.Drawing.Point(643, 123);
+            this.Param.Location = new System.Drawing.Point(642, 141);
             this.Param.Name = "Param";
             this.Param.Size = new System.Drawing.Size(116, 13);
             this.Param.TabIndex = 6;
@@ -129,37 +130,41 @@
             // 
             // LeftBoardTextBox
             // 
-            this.LeftBoardTextBox.Location = new System.Drawing.Point(646, 23);
+            this.LeftBoardTextBox.Location = new System.Drawing.Point(645, 41);
             this.LeftBoardTextBox.Name = "LeftBoardTextBox";
             this.LeftBoardTextBox.Size = new System.Drawing.Size(83, 20);
             this.LeftBoardTextBox.TabIndex = 7;
+            this.LeftBoardTextBox.Text = "-10";
             this.LeftBoardTextBox.TextChanged += new System.EventHandler(this.IsEmpty);
             this.LeftBoardTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyTyping);
             // 
             // RightBoardTextBox
             // 
-            this.RightBoardTextBox.Location = new System.Drawing.Point(646, 61);
+            this.RightBoardTextBox.Location = new System.Drawing.Point(645, 79);
             this.RightBoardTextBox.Name = "RightBoardTextBox";
             this.RightBoardTextBox.Size = new System.Drawing.Size(83, 20);
             this.RightBoardTextBox.TabIndex = 8;
+            this.RightBoardTextBox.Text = "10";
             this.RightBoardTextBox.TextChanged += new System.EventHandler(this.IsEmpty);
             this.RightBoardTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyTyping);
             // 
             // StepTextBox
             // 
-            this.StepTextBox.Location = new System.Drawing.Point(646, 100);
+            this.StepTextBox.Location = new System.Drawing.Point(645, 118);
             this.StepTextBox.Name = "StepTextBox";
             this.StepTextBox.Size = new System.Drawing.Size(83, 20);
             this.StepTextBox.TabIndex = 9;
+            this.StepTextBox.Text = "2";
             this.StepTextBox.TextChanged += new System.EventHandler(this.IsEmpty);
             this.StepTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyTyping);
             // 
             // ParamTextBox
             // 
-            this.ParamTextBox.Location = new System.Drawing.Point(646, 139);
+            this.ParamTextBox.Location = new System.Drawing.Point(645, 157);
             this.ParamTextBox.Name = "ParamTextBox";
             this.ParamTextBox.Size = new System.Drawing.Size(83, 20);
             this.ParamTextBox.TabIndex = 10;
+            this.ParamTextBox.Text = "6";
             this.ParamTextBox.TextChanged += new System.EventHandler(this.IsEmpty);
             this.ParamTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyTyping);
             // 
@@ -167,7 +172,7 @@
             // 
             this.ValuesTable.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.ValuesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ValuesTable.Location = new System.Drawing.Point(588, 188);
+            this.ValuesTable.Location = new System.Drawing.Point(587, 196);
             this.ValuesTable.Name = "ValuesTable";
             this.ValuesTable.ReadOnly = true;
             this.ValuesTable.Size = new System.Drawing.Size(200, 150);
@@ -176,7 +181,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(610, 172);
+            this.label3.Location = new System.Drawing.Point(609, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 13);
             this.label3.TabIndex = 12;
@@ -201,12 +206,46 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // SaveData
+            // 
+            this.SaveData.Location = new System.Drawing.Point(631, 404);
+            this.SaveData.Name = "SaveData";
+            this.SaveData.Size = new System.Drawing.Size(113, 34);
+            this.SaveData.TabIndex = 15;
+            this.SaveData.Text = "Сохранить исходные данные";
+            this.SaveData.UseVisualStyleBackColor = true;
+            this.SaveData.Click += new System.EventHandler(this.SaveData_Click);
+            // 
+            // SaveResults
+            // 
+            this.SaveResults.Enabled = false;
+            this.SaveResults.Location = new System.Drawing.Point(631, 441);
+            this.SaveResults.Name = "SaveResults";
+            this.SaveResults.Size = new System.Drawing.Size(113, 37);
+            this.SaveResults.TabIndex = 16;
+            this.SaveResults.Text = "Сохранить результаты";
+            this.SaveResults.UseVisualStyleBackColor = true;
+            this.SaveResults.Click += new System.EventHandler(this.SaveResults_Click);
+            // 
+            // LoadData
+            // 
+            this.LoadData.Location = new System.Drawing.Point(597, 2);
+            this.LoadData.Name = "LoadData";
+            this.LoadData.Size = new System.Drawing.Size(181, 24);
+            this.LoadData.TabIndex = 17;
+            this.LoadData.Text = "Загрузить исходные данные";
+            this.LoadData.UseVisualStyleBackColor = true;
+            this.LoadData.Click += new System.EventHandler(this.LoadData_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.LoadData);
+            this.Controls.Add(this.SaveResults);
+            this.Controls.Add(this.SaveData);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -223,9 +262,9 @@
             this.Controls.Add(this.GetChart);
             this.Controls.Add(this.WitchOfAgnesiChart);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MaximumSize = new System.Drawing.Size(816, 520);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 520);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WitchOfAgnesi";
@@ -254,6 +293,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button SaveData;
+        private System.Windows.Forms.Button SaveResults;
+        private System.Windows.Forms.Button LoadData;
     }
 }
 

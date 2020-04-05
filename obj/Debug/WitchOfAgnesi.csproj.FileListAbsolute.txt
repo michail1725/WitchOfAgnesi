@@ -7,3 +7,4 @@ E:\Solutions\WitchOfAgnesi\obj\Debug\WitchofAgnesi.Properties.Resources.resource
 E:\Solutions\WitchOfAgnesi\obj\Debug\WitchOfAgnesi.csproj.GenerateResource.cache
 E:\Solutions\WitchOfAgnesi\obj\Debug\WitchofAgnesi.exe
 E:\Solutions\WitchOfAgnesi\obj\Debug\WitchofAgnesi.pdb
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchOfAgnesi.csprojAssemblyReference.cache
