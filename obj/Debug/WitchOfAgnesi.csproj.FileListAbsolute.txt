@@ -1,0 +1,9 @@
+E:\Solutions\WitchOfAgnesi\bin\Debug\WitchofAgnesi.exe.config
+E:\Solutions\WitchOfAgnesi\bin\Debug\WitchofAgnesi.exe
+E:\Solutions\WitchOfAgnesi\bin\Debug\WitchofAgnesi.pdb
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchOfAgnesi.GreetingForm.resources
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchOfAgnesi.MainForm.resources
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchofAgnesi.Properties.Resources.resources
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchOfAgnesi.csproj.GenerateResource.cache
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchofAgnesi.exe
+E:\Solutions\WitchOfAgnesi\obj\Debug\WitchofAgnesi.pdb
